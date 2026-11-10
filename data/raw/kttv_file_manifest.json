@@ -1,0 +1,28 @@
+{
+  "dataset_id": "VN-KTTV-SYNOP-ERA5-2017-2025-V1",
+  "title": "Synthetic meteorological QC benchmark, frozen input, 2017–2025",
+  "sources": [
+    "Frozen synthetic benchmark JSON supplied with this project; no NOAA ISD or Meteostat station observations were ingested."
+  ],
+  "temporal_coverage": "2017-01-01 to 2025-12-31",
+  "spatial_coverage": [
+    "Synthetic location label: Hanoi (WMO_48820)",
+    "Synthetic location label: Da Nang (WMO_48855)",
+    "Synthetic location label: Ho Chi Minh City (WMO_48900)"
+  ],
+  "raw_file": "data/raw/vietnam_kttv_2017_2025_raw.json",
+  "record_count": 10273,
+  "sha256": "c3be43292dfab99a69a7236c2fe95f40e98beb7833af02ff4ec4681ecfa2b993",
+  "license": "CC BY 4.0",
+  "dataset_nature": "synthetic_fault_injected_benchmark",
+  "reference_materials": [
+    "Open-Meteo ERA5 variable schema (reference only, not the source of benchmark observations)",
+    "WMO-No. 8, WMO-No. 1269 and QCVN 46:2022/BTNMT (QC design context, not measured-data sources)"
+  ],
+  "reproducibility": {
+    "scope": "Processing, QC and experiments from the supplied frozen JSON input",
+    "original_generator_included": false,
+    "limitation": "Original generator code, seed and full parameters are unavailable; original synthetic generation is not reproducible from this repository."
+  },
+  "legacy_labels_note": "WMO identifiers and source_channel labels such as ISD_SYNOP_ERA5_MERGED_V1 are legacy synthetic identifiers, not evidence of station observation ingestion."
+}

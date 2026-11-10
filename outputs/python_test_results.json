@@ -1,0 +1,14 @@
+{
+  "core_run_id": "20261108T120000Z-kttv34vn",
+  "status": "passed",
+  "tests_run": 48,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_files": {
+    "tests/test_pipeline.py": "3a2fe2b8cda49d1624e298ad3b3f794a5a0238423782563d4a737c3274e6e4a9",
+    "tests/test_real.py": "09c140729cace9cae661ba2b272b3add1d12f17f755e0667898b523590bcf168",
+    "tests/test_report_evidence.py": "e97fe774708526b7bbc555a56b0389167f093341e43d3360320cbf50de40445d",
+    "tests/test_study_additions.py": "29fb4c858aaad093e8123934673322d040374cd30eb4661c4e3b1010798e879e"
+  }
+}

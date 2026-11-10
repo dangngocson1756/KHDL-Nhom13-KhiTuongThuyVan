@@ -1,0 +1,56 @@
+[
+  {
+    "file": "Ha_Noi.json",
+    "sha256": "ca3c7502c95fb83dfab106498c9bb60aa30ffbb16a46993bc91e80c41d0be457",
+    "rows": 3287,
+    "grid_latitude": 21.0,
+    "grid_longitude": 105.75,
+    "units": {
+      "time": "iso8601",
+      "temperature_2m_mean": "°C",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "relative_humidity_2m_mean": "%",
+      "pressure_msl_mean": "hPa",
+      "precipitation_sum": "mm",
+      "wind_speed_10m_mean": "m/s",
+      "shortwave_radiation_sum": "MJ/m²"
+    }
+  },
+  {
+    "file": "Da_Nang.json",
+    "sha256": "01fd3224060d437c3d9d0a668217619e778eadd203a3ca1d7594799a49caa700",
+    "rows": 3287,
+    "grid_latitude": 16.0,
+    "grid_longitude": 108.25,
+    "units": {
+      "time": "iso8601",
+      "temperature_2m_mean": "°C",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "relative_humidity_2m_mean": "%",
+      "pressure_msl_mean": "hPa",
+      "precipitation_sum": "mm",
+      "wind_speed_10m_mean": "m/s",
+      "shortwave_radiation_sum": "MJ/m²"
+    }
+  },
+  {
+    "file": "TP_HCM.json",
+    "sha256": "15c467120d301ec348535fd79c10226b828164a6b9a2fa86e3837f6186b557fa",
+    "rows": 3287,
+    "grid_latitude": 10.75,
+    "grid_longitude": 106.75,
+    "units": {
+      "time": "iso8601",
+      "temperature_2m_mean": "°C",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "relative_humidity_2m_mean": "%",
+      "pressure_msl_mean": "hPa",
+      "precipitation_sum": "mm",
+      "wind_speed_10m_mean": "m/s",
+      "shortwave_radiation_sum": "MJ/m²"
+    }
+  }
+]

@@ -1,0 +1,3 @@
+reference,p,reference_Brier,BSS
+Train prevalence (operational baseline),0.5408509527538502,0.24446858675049263,0.38104069717601197
+Test prevalence (hindsight reference only),0.5881278538812785,0.24223348137028003,0.3753295161285011

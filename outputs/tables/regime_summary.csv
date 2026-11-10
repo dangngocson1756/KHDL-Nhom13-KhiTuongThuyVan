@@ -1,0 +1,5 @@
+﻿weather_regime,regime_label,n,median_temp_c,median_humidity_pct,mean_precip_mm
+mild_cloudy,Mát / Nhiều mây ổn định,4158,24.63,69.7,0.14
+rainy_convective,Mưa rào / Đối lưu ẩm,2938,27.21,84.4,8.81
+hot_dry,Nắng nóng / Khô quang,2038,29.89,67.2,0.0
+extreme_storm,Mưa lớn / Nhiễu động mạnh,500,27.52,91.3,46.44

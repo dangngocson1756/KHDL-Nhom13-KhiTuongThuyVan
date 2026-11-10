@@ -1,0 +1,105 @@
+{
+  "query": "SELECT row_id, obs_date, temp_mean_c, pressure_hpa, precip_mm\nFROM observations\nWHERE station_id = ? AND regime_id = ?\n  AND temp_mean_c BETWEEN ? AND ?\nORDER BY temp_mean_c, row_id LIMIT 100",
+  "parameters": [
+    3,
+    2,
+    27.8,
+    30.2
+  ],
+  "before": {
+    "median_ms": 0.9972,
+    "p10_ms": 0.7214,
+    "p90_ms": 1.6776,
+    "plan": [
+      "(4, 0, 148, 'SCAN observations')",
+      "(30, 0, 0, 'USE TEMP B-TREE FOR ORDER BY')"
+    ],
+    "result_count": 100,
+    "result_sha256": "53e185af6f1484b2fbfa6a14b0ed5617a0f7e9fcaa9afc2dc24a2d3ca685b63c",
+    "sample_rows": [
+      [
+        7322,
+        "2019-01-18",
+        28.0,
+        1009.1,
+        0.0
+      ],
+      [
+        7876,
+        "2020-07-25",
+        28.0,
+        1009.2,
+        0.0
+      ],
+      [
+        9682,
+        "2025-07-05",
+        28.0,
+        1008.5,
+        0.0
+      ],
+      [
+        7660,
+        "2019-12-22",
+        28.01,
+        1009.2,
+        0.0
+      ],
+      [
+        7809,
+        "2020-05-19",
+        28.01,
+        1012.6,
+        0.0
+      ]
+    ]
+  },
+  "after": {
+    "median_ms": 0.1479,
+    "p10_ms": 0.0901,
+    "p90_ms": 0.5318,
+    "plan": [
+      "(5, 0, 62, 'SEARCH observations USING INDEX idx_observations_search (station_id=? AND regime_id=? AND temp_mean_c>? AND temp_mean_c<?)')"
+    ],
+    "result_count": 100,
+    "result_sha256": "53e185af6f1484b2fbfa6a14b0ed5617a0f7e9fcaa9afc2dc24a2d3ca685b63c",
+    "sample_rows": [
+      [
+        7322,
+        "2019-01-18",
+        28.0,
+        1009.1,
+        0.0
+      ],
+      [
+        7876,
+        "2020-07-25",
+        28.0,
+        1009.2,
+        0.0
+      ],
+      [
+        9682,
+        "2025-07-05",
+        28.0,
+        1008.5,
+        0.0
+      ],
+      [
+        7660,
+        "2019-12-22",
+        28.01,
+        1009.2,
+        0.0
+      ],
+      [
+        7809,
+        "2020-05-19",
+        28.01,
+        1012.6,
+        0.0
+      ]
+    ]
+  },
+  "speedup_ratio": 6.74
+}

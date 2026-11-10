@@ -1,0 +1,16 @@
+{
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=16.04&longitude=108.2&start_date=2017-01-01&end_date=2025-12-31&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Crelative_humidity_2m_mean%2Cpressure_msl_mean%2Cprecipitation_sum%2Cwind_speed_10m_mean%2Cshortwave_radiation_sum&models=era5&timezone=Asia%2FBangkok&wind_speed_unit=ms",
+  "retrieved_utc": "2026-11-09T15:50:02.777663+00:00",
+  "parameters": {
+    "latitude": 16.04,
+    "longitude": 108.2,
+    "start_date": "2017-01-01",
+    "end_date": "2025-12-31",
+    "daily": "temperature_2m_mean,temperature_2m_max,temperature_2m_min,relative_humidity_2m_mean,pressure_msl_mean,precipitation_sum,wind_speed_10m_mean,shortwave_radiation_sum",
+    "models": "era5",
+    "timezone": "Asia/Bangkok",
+    "wind_speed_unit": "ms"
+  },
+  "sha256": "01fd3224060d437c3d9d0a668217619e778eadd203a3ca1d7594799a49caa700",
+  "integrity_note": "SHA-256 pinned during report revision; original retrieval timestamp retained."
+}

@@ -1,0 +1,23 @@
+{
+  "purpose": "Recomputed descriptive diagnostics; no test-set tuning",
+  "python": "3.12.14",
+  "inputs": {
+    "outputs/real/clean.csv": "3511f889e9d6cc2fa90c19ca27ca86bde8266c015c7a42d3b31d55d1cec45392",
+    "outputs/real/predictions.csv": "cd811f1852dbfe6db30b9b59c31cbee849b91e15b806308f27f37242124bf7a5",
+    "outputs/hydrology/daily.csv": "35b7ea741c2e1fc88d8622ce7e57fe68f6f388a23fc7789838443efedd91a2e5"
+  },
+  "outputs": {
+    "outputs/report_evidence/calibration.csv": "911d59b0edec7e0af1d98823594bf609efb82c6eff7b13f718c0380f58c59f37",
+    "outputs/report_evidence/event_window.csv": "de7cb4285fde678ba24d869de000a5eb6fc92ca5c3da780317cc9083813746ea",
+    "outputs/report_evidence/hydrology_quantiles.csv": "9763545de88a5d73eb1a23b34aef010ec5dfb02285269a850fed900cdc01d4e5",
+    "outputs/report_evidence/largest_errors.csv": "1ea5165419b4ecfa68b3416feedba081025ba833de83a36df95d16707659abab",
+    "outputs/report_evidence/location_profile.csv": "f7eca80dff81aeafdae395212c7079c3563c4f2a43f88a3eec9249d9a8e6af23",
+    "outputs/report_evidence/monthly_errors.csv": "9f5ab925f682ed647488ae4a60f40d1ba60b3ae092a67204818c37718d3b1898",
+    "outputs/report_evidence/monthly_weather.csv": "fc48014a78b9ad00c256adb2e698bcb1a0e143e3fc5b414e5fc760e2847b7cc4",
+    "outputs/report_evidence/rain_confusion.csv": "bbe86f705c2a16910a8a8adca8d0f882e0d959791beb6923f5f8ab8c66ad0718",
+    "outputs/report_evidence/source_inventory.csv": "fdeb0160898bd193351b69d730eb273986bc41b85f415500552f39dd080f70a7",
+    "outputs/report_evidence/spearman_location.csv": "6f027db4f99eaedefcc15d6840de69a7c81e9748e6ba714e71b0216eaf977ccf",
+    "outputs/report_evidence/split_inventory.csv": "346e7cdae2112f5ebc5aaed7d12f9ae896bdf318160ff47913fe80f051befe39",
+    "outputs/report_evidence/sql_era5_totals.csv": "c07b3b7edd72ce412058f8070b6fe39f9edc1b2718dfe881723dd98fed5ee157"
+  }
+}

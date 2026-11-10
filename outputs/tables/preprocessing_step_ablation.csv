@@ -1,0 +1,6 @@
+﻿step_name,n_train,val_mae_c,val_rmse_c,test_mae_c,test_rmse_c,test_r2
+"Bước C0a (Dữ liệu thô hoàn toàn): Giữ bản ghi trùng, gió chưa đổi đơn vị, chưa lọc QC, điền thiếu bằng TB Train",7808,1.1986,1.5333,1.2387,1.5823,0.8655
+"Bước C0b (+ Khử trùng lặp): Đã loại 412 dòng trùng khóa băm, chưa đổi đơn vị gió, chưa lọc QC, điền TB Train",7487,1.1987,1.5334,1.2387,1.5823,0.8655
+"Bước C0c (+ Quy đổi đơn vị gió): Đã khử trùng & đổi 242 dòng gió km/h → m/s, chưa lọc QC, điền TB Train",7487,1.1988,1.5331,1.2384,1.5819,0.8656
+"Bước C0d (+ Lọc cách ly QC vật lý WMO-No. 8): Đã loại 227 dòng lỗi vật lý, nhưng điền khuyết bằng TB Train",7140,1.1985,1.5328,1.2378,1.5812,0.8657
+"Bước C1 (Hoàn tất tiền xử lý chuẩn): + Điền khuyết có điều kiện kẹp trong [Tmin, Tmax] & ≥ Td",7140,1.1554,1.4304,1.1955,1.4884,0.881

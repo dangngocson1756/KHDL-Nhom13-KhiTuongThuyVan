@@ -1,0 +1,13 @@
+{
+  "source_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2022/10/02-bxd.pdf",
+  "document": "QCVN 02:2022/BXD",
+  "station_row": "72. Hà Nội",
+  "annual_precipitation_mm": 1670.1,
+  "mean_rainy_days_per_year": 147.9,
+  "precipitation_table": "A.25",
+  "precipitation_pdf_page": 447,
+  "rainy_days_table": "A.28",
+  "rainy_days_pdf_page": 463,
+  "note": "Read directly from the original PDF. Climatic reference period and rainy-day definition differ from the study; not independent daily station validation.",
+  "downloaded_pdf_sha256": "12cce9e43ce7c4f5e143e62239d038f5499cd6c713ab832b2e15b4a962962bce"
+}

@@ -1,0 +1,142 @@
+{
+  "source": "Open-Meteo ERA5 reanalysis; not station observations or operational forecasts",
+  "quality": {
+    "raw_rows": 9861,
+    "duplicates": 0,
+    "rejected": 0,
+    "clean_rows": 9861,
+    "missing": {
+      "date": 0,
+      "temp": 0,
+      "tmax": 0,
+      "tmin": 0,
+      "humidity": 0,
+      "pressure": 0,
+      "rain": 0,
+      "wind": 0,
+      "solar": 0,
+      "location": 0
+    }
+  },
+  "split_counts": {
+    "train": 7662,
+    "validation": 1098,
+    "test": 1095
+  },
+  "split_policy": "target_date determines split; earlier observed history may cross the year boundary",
+  "chosen_by_validation": "R3",
+  "temperature": [
+    {
+      "model": "R1",
+      "alpha": 0.1,
+      "validation_RMSE": 1.009720491126408,
+      "MAE": 0.7033007373461604,
+      "RMSE": 1.0465142030190133,
+      "R2": 0.9237722422292292
+    },
+    {
+      "model": "R2",
+      "alpha": 0.1,
+      "validation_RMSE": 0.9659384008679635,
+      "MAE": 0.6747408356433712,
+      "RMSE": 0.993458386276786,
+      "R2": 0.9313054548954337
+    },
+    {
+      "model": "R3",
+      "alpha": 0.1,
+      "validation_RMSE": 0.925764505759406,
+      "MAE": 0.6522482246676791,
+      "RMSE": 0.9301896534256218,
+      "R2": 0.9397765126419506
+    },
+    {
+      "model": "Persistence",
+      "MAE": 0.7221004566210046,
+      "RMSE": 1.0740823841943083,
+      "R2": 0.9197032293550649
+    },
+    {
+      "model": "Monthly_climatology",
+      "MAE": 1.2982084553393207,
+      "RMSE": 1.7797254326995138,
+      "R2": 0.7795404559577949
+    },
+    {
+      "model": "Climatology_anomaly",
+      "MAE": 0.6964845203635787,
+      "RMSE": 1.0209455680750157,
+      "R2": 0.927451561726652,
+      "anomaly_weight": 0.85
+    }
+  ],
+  "rain": {
+    "C": 0.1,
+    "threshold_validation": 0.44999999999999996,
+    "Accuracy": 0.7872146118721461,
+    "F1": 0.8166797797010228,
+    "ROC_AUC": 0.859322278993541,
+    "Average_precision": 0.8838721773726952,
+    "Brier": 0.15131610601745055,
+    "always_dry_accuracy": 0.41187214611872147,
+    "always_wet_F1": 0.7406555491661875,
+    "persistence_F1": 0.8052754072924748,
+    "train_prevalence": 0.5408509527538502,
+    "test_prevalence": 0.5881278538812785,
+    "Brier_climatology_train": 0.24446858675049263,
+    "Brier_climatology_test_hindsight": 0.24223348137028003,
+    "BSS_train_climatology": 0.38104069717601197,
+    "BSS_test_climatology_hindsight": 0.3753295161285011
+  },
+  "paired_bootstrap": [
+    {
+      "scope": "ALL",
+      "comparison": "R3 - Persistence",
+      "metric": "RMSE_C",
+      "diff": -0.1439,
+      "ci_low": -0.1938,
+      "ci_high": -0.0951
+    },
+    {
+      "scope": "ALL",
+      "comparison": "R3 - Climatology_anomaly",
+      "metric": "RMSE_C",
+      "diff": -0.0908,
+      "ci_low": -0.1403,
+      "ci_high": -0.0419
+    },
+    {
+      "scope": "ALL",
+      "comparison": "Logistic - rain persistence",
+      "metric": "F1_pp",
+      "diff": 1.1404,
+      "ci_low": -1.1596,
+      "ci_high": 3.1507
+    },
+    {
+      "scope": "Da_Nang",
+      "comparison": "R3 - Persistence",
+      "metric": "RMSE_C",
+      "diff": -0.1035,
+      "ci_low": -0.1471,
+      "ci_high": -0.0518
+    },
+    {
+      "scope": "Ha_Noi",
+      "comparison": "R3 - Persistence",
+      "metric": "RMSE_C",
+      "diff": -0.2401,
+      "ci_low": -0.3168,
+      "ci_high": -0.1632
+    },
+    {
+      "scope": "TP_HCM",
+      "comparison": "R3 - Persistence",
+      "metric": "RMSE_C",
+      "diff": -0.0164,
+      "ci_low": -0.0353,
+      "ci_high": 0.0046
+    }
+  ],
+  "run_utc": "2026-11-10T07:41:19.643471+00:00"
+}

@@ -1,0 +1,61 @@
+Hydrology replay: (5478, 8) rows/columns; [{'location': 'Ha_Noi', 'n_total': 1826, 'n_valid': 1826, 'n_missing': 0, 'n_negative': 0, 'grid_latitude': 21.025002, 'grid_longitude': 105.82501, 'mean_m3s': 3376.209622124863, 'median_m3s': 2038.3899999999999, 'p95_m3s': 10989.145, 'max_m3s': 21977.6}, {'location': 'Da_Nang', 'n_total': 1826, 'n_valid': 1826, 'n_missing': 0, 'n_negative': 0, 'grid_latitude': 16.025002, 'grid_longitude': 108.17502, 'mean_m3s': 34.591188389923325, 'median_m3s': 19.99, 'p95_m3s': 122.8075, 'max_m3s': 304.49}, {'location': 'TP_HCM', 'n_total': 1826, 'n_valid': 1826, 'n_missing': 0, 'n_negative': 0, 'grid_latitude': 10.825005, 'grid_longitude': 106.67502, 'mean_m3s': 155.88099123767802, 'median_m3s': 90.41, 'p95_m3s': 519.8925, 'max_m3s': 958.4}]
+Pipeline completed successfully. Clean records: 9634 | Complete calendar windows: 9187
+Dashboard built successfully: /workspace/scratch/7ae34069a1e2/Nhom13_HoanThien_38/outputs/DASHBOARD_KHI_TUONG.html
+Supplementary evidence: 12 CSV tables, 7 figures
+test_01_normalize_text (test_pipeline.TestMeteorologicalPipeline.test_01_normalize_text) ... ok
+test_02_parse_date_iso_standard (test_pipeline.TestMeteorologicalPipeline.test_02_parse_date_iso_standard) ... ok
+test_03_parse_date_iso_slash_vn (test_pipeline.TestMeteorologicalPipeline.test_03_parse_date_iso_slash_vn) ... ok
+test_04_parse_date_invalid (test_pipeline.TestMeteorologicalPipeline.test_04_parse_date_invalid) ... ok
+test_05_parse_float_celsius (test_pipeline.TestMeteorologicalPipeline.test_05_parse_float_celsius) ... ok
+test_06_parse_float_hpa (test_pipeline.TestMeteorologicalPipeline.test_06_parse_float_hpa) ... ok
+test_07_parse_float_wind_kmh (test_pipeline.TestMeteorologicalPipeline.test_07_parse_float_wind_kmh) ... ok
+test_08_parse_float_missing_tokens (test_pipeline.TestMeteorologicalPipeline.test_08_parse_float_missing_tokens) ... ok
+test_09_parse_float_corrupted_token (test_pipeline.TestMeteorologicalPipeline.test_09_parse_float_corrupted_token) ... ok
+test_10_wmo_qc_valid_observation (test_pipeline.TestMeteorologicalPipeline.test_10_wmo_qc_valid_observation) ... ok
+test_11_wmo_qc_dewpoint_exceeds_temp (test_pipeline.TestMeteorologicalPipeline.test_11_wmo_qc_dewpoint_exceeds_temp) ... ok
+test_12_wmo_qc_tmax_less_than_tmin (test_pipeline.TestMeteorologicalPipeline.test_12_wmo_qc_tmax_less_than_tmin) ... ok
+test_13_wmo_qc_humidity_over_100 (test_pipeline.TestMeteorologicalPipeline.test_13_wmo_qc_humidity_over_100) ... ok
+test_14_wmo_qc_negative_precipitation (test_pipeline.TestMeteorologicalPipeline.test_14_wmo_qc_negative_precipitation) ... ok
+test_15_wmo_qc_imputable_missing_temp_mean (test_pipeline.TestMeteorologicalPipeline.test_15_wmo_qc_imputable_missing_temp_mean) ... ok
+test_16_wmo_qc_heavy_rain_flag (test_pipeline.TestMeteorologicalPipeline.test_16_wmo_qc_heavy_rain_flag) ... ok
+test_17_classify_season (test_pipeline.TestMeteorologicalPipeline.test_17_classify_season) ... ok
+test_18_classify_regime (test_pipeline.TestMeteorologicalPipeline.test_18_classify_regime) ... ok
+test_19_kmeans_convergence_and_ari (test_pipeline.TestMeteorologicalPipeline.test_19_kmeans_convergence_and_ari) ... ok
+test_20_verified_raw_source_checksum (test_pipeline.TestMeteorologicalPipeline.test_20_verified_raw_source_checksum) ... ok
+test_21_lineage_conservation (test_pipeline.TestMeteorologicalPipeline.test_21_lineage_conservation) ... ok
+test_22_clean_csv_physical_bounds (test_pipeline.TestMeteorologicalPipeline.test_22_clean_csv_physical_bounds) ... ok
+test_23_sqlite_schema_and_foreign_keys (test_pipeline.TestMeteorologicalPipeline.test_23_sqlite_schema_and_foreign_keys) ... ok
+test_24_sql_benchmark_hash_equivalence (test_pipeline.TestMeteorologicalPipeline.test_24_sql_benchmark_hash_equivalence) ... ok
+test_25_forecast_ablation_improvement (test_pipeline.TestMeteorologicalPipeline.test_25_forecast_ablation_improvement) ... ok
+test_26_manifest_artifact_hashes (test_pipeline.TestMeteorologicalPipeline.test_26_manifest_artifact_hashes) ... ok
+test_27_dashboard_and_workbook_metadata_sync (test_pipeline.TestMeteorologicalPipeline.test_27_dashboard_and_workbook_metadata_sync) ... ok
+test_28_target_date_two_sided_split_no_boundary_leakage (test_pipeline.TestMeteorologicalPipeline.test_28_target_date_two_sided_split_no_boundary_leakage) ... ok
+test_29_preprocessing_step_ablation_and_station_metrics (test_pipeline.TestMeteorologicalPipeline.test_29_preprocessing_step_ablation_and_station_metrics) ... ok
+test_30_programmatic_qc_audit_and_operational_counts (test_pipeline.TestMeteorologicalPipeline.test_30_programmatic_qc_audit_and_operational_counts) ... ok
+test_01_source_provenance_hashes (test_real.Checks.test_01_source_provenance_hashes) ... ok
+test_02_target_date_boundaries (test_real.Checks.test_02_target_date_boundaries) ... ok
+test_03_labels_alignment (test_real.Checks.test_03_labels_alignment) ... ok
+test_04_temperature_metrics_and_r1_r3_labels (test_real.Checks.test_04_temperature_metrics_and_r1_r3_labels) ... ok
+test_05_validation_model_selection (test_real.Checks.test_05_validation_model_selection) ... ok
+test_06_era5_descriptive_and_spearman_tables (test_real.Checks.test_06_era5_descriptive_and_spearman_tables) ... ok
+test_07_era5_location_season_and_clusters (test_real.Checks.test_07_era5_location_season_and_clusters) ... ok
+test_08_era5_paired_bootstrap_table (test_real.Checks.test_08_era5_paired_bootstrap_table) ... ok
+test_09_synthetic_paired_bootstrap_and_wind_counts (test_real.Checks.test_09_synthetic_paired_bootstrap_and_wind_counts) ... ok
+test_confusion_and_calibration_conserve_test_samples (test_report_evidence.EvidenceChecks.test_confusion_and_calibration_conserve_test_samples) ... ok
+test_extreme_error_and_sql_totals_recomputed (test_report_evidence.EvidenceChecks.test_extreme_error_and_sql_totals_recomputed) ... ok
+test_model_units_and_calendar_contracts (test_report_evidence.EvidenceChecks.test_model_units_and_calendar_contracts) ... ok
+test_modified_cache_is_rejected (test_report_evidence.EvidenceChecks.test_modified_cache_is_rejected) ... ok
+test_hydrology_integrity_units_dates (test_study_additions.StudyAdditions.test_hydrology_integrity_units_dates) ... ok
+test_rain_skill_uses_train_reference (test_study_additions.StudyAdditions.test_rain_skill_uses_train_reference) ... ok
+test_real_calendar_groups_and_clustering (test_study_additions.StudyAdditions.test_real_calendar_groups_and_clustering) ... ok
+test_real_database_matches_source (test_study_additions.StudyAdditions.test_real_database_matches_source) ... ok
+test_split_policies_are_explicit (test_study_additions.StudyAdditions.test_split_policies_are_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.734s
+
+OK
+SQL demo verified: Q1=3 rows, Q2=4 rows, Q3=20 rows, Q4=100 rows, integrity=ok
+Delivery check passed: {"core_run_id": "20261108T120000Z-kttv34vn", "raw_count": 10273, "clean_count": 9634, "duplicate_count": 412, "rejected_count": 227, "sqlite_observations": 9634, "status": "verified_ok"}
+ERA5-first report sources and supporting docs refreshed.
+Full project pipeline and verification completed successfully.

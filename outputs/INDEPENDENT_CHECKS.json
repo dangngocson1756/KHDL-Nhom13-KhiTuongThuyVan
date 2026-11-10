@@ -1,0 +1,89 @@
+{
+  "independent_medians": [
+    {
+      "variable": "temp_mean_c",
+      "label": "Nhiệt độ trung bình ngày",
+      "unit": "°C",
+      "pandas_median": 26.91,
+      "python_statistics_median": 26.91,
+      "sqlite_order_by_median": 26.91,
+      "max_abs_diff": 0.0
+    },
+    {
+      "variable": "humidity_pct",
+      "label": "Độ ẩm tương đối",
+      "unit": "%",
+      "pandas_median": 74.0,
+      "python_statistics_median": 74.0,
+      "sqlite_order_by_median": 74.0,
+      "max_abs_diff": 0.0
+    },
+    {
+      "variable": "pressure_hpa",
+      "label": "Áp suất khí quyển",
+      "unit": "hPa",
+      "pandas_median": 1010.5,
+      "python_statistics_median": 1010.5,
+      "sqlite_order_by_median": 1010.5,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "qc_ground_truth_audit": [
+    {
+      "field": "Khử bản ghi trùng truyền tin SYNOP (SYNOP_RETRANSMIT_DUP)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "412/412",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi Điểm sương Td > T & Magnus (SENSOR_FAULT_DEWPOINT)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "65/65",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi đảo ngược cực trị Tmax < Tmin (SENSOR_FAULT_TMAX_TMIN)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "55/55",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi Độ ẩm ngoài miền 0–100% (SENSOR_FAULT_HUMIDITY)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "55/55",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi Lượng mưa âm / Chuỗi hỏng (SENSOR_FAULT_PRECIP)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "52/52",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Giữ bản ghi hợp lệ (ISD_SYNOP_ERA5_MERGED_V1)",
+      "check_type": "Đối chiếu nhãn chuẩn mô phỏng",
+      "matched": "9.634/9.634",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Quy đổi đơn vị tốc độ gió",
+      "check_type": "Thống kê vận hành (đếm dòng)",
+      "matched": "255 dòng thô; 242 không trùng; 234 sạch",
+      "false_alarms": "—",
+      "result_note": "242 dòng trước QC, trong đó 234 được giữ và 8 bị cách ly"
+    },
+    {
+      "field": "Điền khuyết có điều kiện kẹp ngưỡng [Tmin, Tmax] trên dòng giữ",
+      "check_type": "Thống kê vận hành (đếm ô thiếu)",
+      "matched": "Đã xử lý 329 ô (183 nhiệt độ + 146 áp suất)",
+      "false_alarms": "—",
+      "result_note": "Đã xử lý 329 ô thiếu (không tính % độ chính xác)"
+    }
+  ]
+}

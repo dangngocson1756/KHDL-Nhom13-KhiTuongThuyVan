@@ -1,0 +1,7 @@
+scope,comparison,metric,diff,ci_low,ci_high
+ALL,R3 - Persistence,RMSE_C,-0.1439,-0.1938,-0.0951
+ALL,R3 - Climatology_anomaly,RMSE_C,-0.0908,-0.1403,-0.0419
+ALL,Logistic - rain persistence,F1_pp,1.1404,-1.1596,3.1507
+Da_Nang,R3 - Persistence,RMSE_C,-0.1035,-0.1471,-0.0518
+Ha_Noi,R3 - Persistence,RMSE_C,-0.2401,-0.3168,-0.1632
+TP_HCM,R3 - Persistence,RMSE_C,-0.0164,-0.0353,0.0046

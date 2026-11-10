@@ -1,0 +1,9 @@
+{
+  "core_run_id": "20261108T120000Z-kttv34vn",
+  "raw_count": 10273,
+  "clean_count": 9634,
+  "duplicate_count": 412,
+  "rejected_count": 227,
+  "sqlite_observations": 9634,
+  "status": "verified_ok"
+}

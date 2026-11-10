@@ -1,0 +1,16 @@
+{
+  "url": "https://flood-api.open-meteo.com/v1/flood?start_date=2017-01-01&end_date=2021-12-31&daily=river_discharge&models=consolidated_v4&timezone=GMT&cell_selection=nearest&latitude=10.82&longitude=106.67",
+  "params": {
+    "start_date": "2017-01-01",
+    "end_date": "2021-12-31",
+    "daily": "river_discharge",
+    "models": "consolidated_v4",
+    "timezone": "GMT",
+    "cell_selection": "nearest",
+    "latitude": 10.82,
+    "longitude": 106.67
+  },
+  "fetched_at_utc": "2026-11-10T07:25:00.570994+00:00",
+  "sha256": "d6ad251dc8168a7bb166eb9644763cfb19b5c9c641e5555f0f5beef69b55620c",
+  "source": "Open-Meteo Flood API / GloFAS v4 consolidated model; not gauge observations"
+}

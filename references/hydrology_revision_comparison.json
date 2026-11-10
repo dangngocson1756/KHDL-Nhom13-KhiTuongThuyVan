@@ -1,0 +1,53 @@
+{
+  "note": "Uploaded series differed from the directly retrieved consolidated_v4 response. Origin of differences not established. Replaced with original API bytes and recorded request metadata. No claim about who changed the earlier series.",
+  "comparisons": [
+    {
+      "location": "Ha_Noi",
+      "uploaded_sha256": "262adce6eb40408a955202a06db0f244fd83ac851c223bdcee7d54017c5adeb3",
+      "api_sha256": "b16980be4821438a4c87ff7858625577fde37f3cab223995df5c54cda0994710",
+      "different_daily_values": 1826,
+      "uploaded_first_three": [
+        2288.01,
+        2277.94,
+        2383.91
+      ],
+      "api_first_three": [
+        742.02,
+        745.45,
+        752.36
+      ]
+    },
+    {
+      "location": "Da_Nang",
+      "uploaded_sha256": "148ade0572466980c94d426cee469cab67c47f27ee522d101e56ab4db43dbd45",
+      "api_sha256": "4e17ad5d20fedbdc2ee4e868b697f0c1313937f75c9f7826e7456952b2ba7217",
+      "different_daily_values": 1826,
+      "uploaded_first_three": [
+        37.74,
+        36.81,
+        33.6
+      ],
+      "api_first_three": [
+        141.89,
+        123.17,
+        107.14
+      ]
+    },
+    {
+      "location": "TP_HCM",
+      "uploaded_sha256": "552e88b976f957e0cc8712193391bcae470c12780f40a2cebdb1a63f52c37494",
+      "api_sha256": "d6ad251dc8168a7bb166eb9644763cfb19b5c9c641e5555f0f5beef69b55620c",
+      "different_daily_values": 1826,
+      "uploaded_first_three": [
+        31.76,
+        33.4,
+        20.5
+      ],
+      "api_first_three": [
+        84.7,
+        78.62,
+        73.82
+      ]
+    }
+  ]
+}

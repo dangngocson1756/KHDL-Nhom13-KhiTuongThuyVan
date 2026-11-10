@@ -1,0 +1,14 @@
+# Thư viện Python cho cả hai nhánh (Dữ liệu thực tế ERA5 & Chuẩn kiểm thử QC) và dựng báo cáo
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+Pillow>=10.0.0
+openpyxl>=3.1.2
+python-docx>=1.1.0
+pypdf>=4.0.0
+
+# Lưu ý công cụ hệ thống (tùy chọn khi cần tính lại cache công thức Excel hoặc xuất DOCX -> PDF):
+# - Ubuntu/Debian: sudo apt-get update && sudo apt-get install -y libreoffice
+# - macOS: brew install --cask libreoffice
+# - Windows: tải LibreOffice tại https://www.libreoffice.org/download/

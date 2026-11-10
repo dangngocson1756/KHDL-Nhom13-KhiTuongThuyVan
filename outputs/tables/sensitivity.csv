@@ -1,0 +1,6 @@
+﻿scenario,n,median_temp_c,mean_precip_mm,precip_change_pct
+Toàn bộ bản ghi giữ (Mặc định),9634,26.91,5.156,0.0
+Bỏ ngoại lệ IQR toàn cục,8227,26.78,1.3384,-74.04
+Bỏ ngoại lệ IQR theo nhóm Trạm × Mùa,9160,26.9,3.5668,-30.82
+Bỏ các dòng khôi phục từ ERA5,9305,26.91,5.1855,0.57
+Chỉ giữ ngày không có mưa cực đoan (< 50 mm),9455,26.9,3.9329,-23.72

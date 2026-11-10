@@ -1,0 +1,6 @@
+﻿config,common_n,ari
+"Mốc chuẩn: Độ ẩm + ln(Mưa + 1), Z-score, bỏ IQR nhóm",9160,1.0
+Giữ toàn bộ ngoại lệ IQR nhóm khi fit,9160,0.9691
+Log + chuẩn hóa Trung vị / IQR,9160,0.9284
+Thang đo gốc (chưa lấy ln và chưa Z-score),9160,0.8448
+Đổi sang cặp biến Nhiệt độ + Áp suất (Z-score),9160,0.0038

@@ -1,0 +1,3 @@
+﻿comparison,diff_rmse_c,ci_low_c,ci_high_c
+pred_c4 - pred_c3,-0.00131,-0.00366,0.00105
+pred_c4 - pred_clim,-0.05083,-0.07539,-0.02854

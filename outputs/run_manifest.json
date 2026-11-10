@@ -1,0 +1,14 @@
+{
+  "run_id": "20261108T120000Z-kttv34vn",
+  "dataset_id": "VN-KTTV-SYNOP-ERA5-2017-2025-V1",
+  "generated_at_utc": "2026-11-10T07:41:51Z",
+  "artifacts": {
+    "data/raw/vietnam_kttv_2017_2025_raw.json": "c3be43292dfab99a69a7236c2fe95f40e98beb7833af02ff4ec4681ecfa2b993",
+    "data/processed/weather_clean.csv": "4f42e7ae1d5d7f150b73fdfea0506f4af47f88074df86d5b60efb70e6c5316a3",
+    "data/processed/weather_clean.json": "c335829ed929dd5ac09026c75ffc71af1140a9eb4141817f454303cb4d356a29",
+    "data/processed/weather_rejected.csv": "9424b0446826249192446b607c06411ab3b3ef2d16f12196962c242df784ba33",
+    "data/processed/row_lineage.csv": "85a18261bb93150c1f2d7d21e964b4f1d9b9617e2ad7f764bb14fc5a4fdf4c02",
+    "outputs/kttv_weather.sqlite": "e6b2e2fdad58d0553306abf46cd3db8db6febd318b462c23bf59c9a10e84715b",
+    "outputs/analysis.json": "5b20112bc1cf5433edf7acad7a9ab6dd1ad9eddffc6eabd3597a84ebcdb7514a"
+  }
+}

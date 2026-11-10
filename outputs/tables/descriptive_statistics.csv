@@ -1,0 +1,6 @@
+﻿variable,label,count,mean,25%,50%,75%,max
+temp_mean_c,Nhiệt độ trung bình (°C),9634,26.2094,23.6425,26.91,29.3,37.57
+humidity_pct,Độ ẩm tương đối (%),9634,74.9823,67.0,74.0,83.075,99.5
+pressure_hpa,Áp suất khí quyển (hPa),9634,1010.531,1008.3,1010.5,1012.8,1023.9
+precip_mm,Lượng mưa ngày (mm),9634,5.156,0.0,0.0,4.5,167.5
+solar_rad_mj,Bức xạ mặt trời (MJ/m²),9634,16.7681,13.77,16.9,19.92,28.99

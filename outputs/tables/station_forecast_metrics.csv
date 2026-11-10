@@ -1,0 +1,4 @@
+﻿station_code,station_name,n_test,pers_rmse_c,clim_rmse_c,c1_rmse_c,c3_rmse_c,c4_rmse_c,c4_mae_c,c4_r2,rain_c4_acc_pct,rain_c4_f1_pct,rain_c4_roc_auc
+WMO_48820,Hà Nội (Láng),343,1.5332,1.4501,1.5136,1.4079,1.4081,1.1351,0.9313,68.8,64.45,0.7357
+WMO_48855,Đà Nẵng,329,1.5389,1.4751,1.4995,1.4284,1.4282,1.1426,0.8277,60.49,54.23,0.656
+WMO_48900,TP. Hồ Chí Minh (Tân Sơn Nhất),346,1.4841,1.4514,1.452,1.3918,1.3879,1.1348,0.7278,73.7,68.94,0.7883

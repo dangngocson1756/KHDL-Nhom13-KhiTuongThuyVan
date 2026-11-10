@@ -1,0 +1,9 @@
+﻿field,check_type,matched,false_alarms,result_note
+Khử bản ghi trùng truyền tin SYNOP (SYNOP_RETRANSMIT_DUP),Đối chiếu nhãn lỗi mô phỏng,412/412,0,"100,00% (trên bộ lỗi mô phỏng)"
+Cách ly lỗi Điểm sương Td > T & Magnus (SENSOR_FAULT_DEWPOINT),Đối chiếu nhãn lỗi mô phỏng,65/65,0,"100,00% (trên bộ lỗi mô phỏng)"
+Cách ly lỗi đảo ngược cực trị Tmax < Tmin (SENSOR_FAULT_TMAX_TMIN),Đối chiếu nhãn lỗi mô phỏng,55/55,0,"100,00% (trên bộ lỗi mô phỏng)"
+Cách ly lỗi Độ ẩm ngoài miền 0–100% (SENSOR_FAULT_HUMIDITY),Đối chiếu nhãn lỗi mô phỏng,55/55,0,"100,00% (trên bộ lỗi mô phỏng)"
+Cách ly lỗi Lượng mưa âm / Chuỗi hỏng (SENSOR_FAULT_PRECIP),Đối chiếu nhãn lỗi mô phỏng,52/52,0,"100,00% (trên bộ lỗi mô phỏng)"
+Giữ bản ghi hợp lệ (ISD_SYNOP_ERA5_MERGED_V1),Đối chiếu nhãn chuẩn mô phỏng,9.634/9.634,0,"100,00% (trên bộ lỗi mô phỏng)"
+Quy đổi đơn vị tốc độ gió,Thống kê vận hành (đếm dòng),255 dòng thô; 242 không trùng; 234 sạch,—,"242 dòng trước QC, trong đó 234 được giữ và 8 bị cách ly"
+"Điền khuyết có điều kiện kẹp ngưỡng [Tmin, Tmax] trên dòng giữ",Thống kê vận hành (đếm ô thiếu),Đã xử lý 329 ô (183 nhiệt độ + 146 áp suất),—,Đã xử lý 329 ô thiếu (không tính % độ chính xác)

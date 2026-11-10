@@ -1,0 +1,40 @@
+{
+  "core_run_id": "20261108T120000Z-kttv34vn",
+  "states": [
+    {
+      "state": "Mặc định (Toàn bộ 3 trạm)",
+      "n": 9634,
+      "scope": "JS thật trên DOM tối giản"
+    },
+    {
+      "state": "TP.HCM (WMO 48900)",
+      "n": 3218,
+      "scope": "Như trên"
+    },
+    {
+      "state": "TP.HCM + Nắng nóng / Khô quang",
+      "n": 977,
+      "scope": "Như trên"
+    },
+    {
+      "state": "Bỏ ngoại lệ IQR nhóm",
+      "n": 9160,
+      "scope": "Như trên"
+    },
+    {
+      "state": "Chỉ hình thái Mưa rào / Đối lưu ẩm",
+      "n": 2938,
+      "scope": "Như trên"
+    },
+    {
+      "state": "Điều kiện không có dữ liệu",
+      "n": 0,
+      "scope": "Ca kiểm lập trình"
+    },
+    {
+      "state": "Tìm Hà Nội trong bảng",
+      "n": 3205,
+      "scope": "Bảng/CSV; KPI toàn trang giữ 9,634"
+    }
+  ]
+}

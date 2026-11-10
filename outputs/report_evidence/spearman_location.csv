@@ -1,0 +1,13 @@
+location,pair,rho
+Da_Nang,humidity / rain,0.29686867247440124
+Da_Nang,temp / humidity,-0.5845733741327743
+Da_Nang,temp / pressure,-0.8791193286526092
+Da_Nang,rain / solar,-0.5945088065252621
+Ha_Noi,humidity / rain,0.6582799534980521
+Ha_Noi,temp / humidity,0.01829887198461019
+Ha_Noi,temp / pressure,-0.8967953798114202
+Ha_Noi,rain / solar,-0.3574406299707829
+TP_HCM,humidity / rain,0.8335836967301291
+TP_HCM,temp / humidity,-0.3244219699025326
+TP_HCM,temp / pressure,-0.16957844820299736
+TP_HCM,rain / solar,-0.5799409978759633

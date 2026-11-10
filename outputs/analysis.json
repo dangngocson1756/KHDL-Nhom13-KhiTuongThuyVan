@@ -1,0 +1,1319 @@
+{
+  "run_id": "20261108T120000Z-kttv34vn",
+  "dataset_id": "VN-KTTV-SYNOP-ERA5-2017-2025-V1",
+  "counts": {
+    "raw_count": 10273,
+    "duplicate_count": 412,
+    "rejected_count": 227,
+    "clean_count": 9634,
+    "complete_window_count": 9187,
+    "cross_boundary_excluded_count": 6,
+    "valid_forecast_window_count": 9181,
+    "calendar_gap_excluded_count": 447,
+    "imputed_temp_count": 183,
+    "imputed_pres_count": 146,
+    "raw_unit_converted_wind_count": 255,
+    "pre_qc_unit_converted_wind_count": 242,
+    "unit_converted_wind_count": 234,
+    "rejected_unit_converted_wind_count": 8,
+    "group_iqr_outlier_count": 474,
+    "global_iqr_outlier_count": 1407
+  },
+  "era5_masking_validation": {
+    "temp_masked_n": 473,
+    "temp_era5_bias_c": 0.0112,
+    "temp_era5_mae_c": 0.1914,
+    "temp_era5_rmse_c": 0.2366,
+    "temp_global_mean_rmse_c": 4.5135,
+    "pres_masked_n": 474,
+    "pres_era5_bias_hpa": -0.0063,
+    "pres_era5_mae_hpa": 0.2675,
+    "pres_era5_rmse_hpa": 0.3557,
+    "pres_global_mean_rmse_hpa": 3.338
+  },
+  "descriptive": [
+    {
+      "variable": "temp_mean_c",
+      "label": "Nhiệt độ trung bình (°C)",
+      "count": 9634,
+      "mean": 26.2094,
+      "25%": 23.6425,
+      "50%": 26.91,
+      "75%": 29.3,
+      "max": 37.57
+    },
+    {
+      "variable": "humidity_pct",
+      "label": "Độ ẩm tương đối (%)",
+      "count": 9634,
+      "mean": 74.9823,
+      "25%": 67.0,
+      "50%": 74.0,
+      "75%": 83.075,
+      "max": 99.5
+    },
+    {
+      "variable": "pressure_hpa",
+      "label": "Áp suất khí quyển (hPa)",
+      "count": 9634,
+      "mean": 1010.531,
+      "25%": 1008.3,
+      "50%": 1010.5,
+      "75%": 1012.8,
+      "max": 1023.9
+    },
+    {
+      "variable": "precip_mm",
+      "label": "Lượng mưa ngày (mm)",
+      "count": 9634,
+      "mean": 5.156,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 4.5,
+      "max": 167.5
+    },
+    {
+      "variable": "solar_rad_mj",
+      "label": "Bức xạ mặt trời (MJ/m²)",
+      "count": 9634,
+      "mean": 16.7681,
+      "25%": 13.77,
+      "50%": 16.9,
+      "75%": 19.92,
+      "max": 28.99
+    }
+  ],
+  "spearman": {
+    "temp_mean_c": {
+      "temp_mean_c": 1.0,
+      "dewpoint_c": 0.855594,
+      "humidity_pct": 0.03999,
+      "pressure_hpa": -0.597443,
+      "precip_mm": 0.095194
+    },
+    "dewpoint_c": {
+      "temp_mean_c": 0.855594,
+      "dewpoint_c": 1.0,
+      "humidity_pct": 0.517288,
+      "pressure_hpa": -0.655878,
+      "precip_mm": 0.494468
+    },
+    "humidity_pct": {
+      "temp_mean_c": 0.03999,
+      "dewpoint_c": 0.517288,
+      "humidity_pct": 1.0,
+      "pressure_hpa": -0.292077,
+      "precip_mm": 0.837546
+    },
+    "pressure_hpa": {
+      "temp_mean_c": -0.597443,
+      "dewpoint_c": -0.655878,
+      "humidity_pct": -0.292077,
+      "pressure_hpa": 1.0,
+      "precip_mm": -0.372689
+    },
+    "precip_mm": {
+      "temp_mean_c": 0.095194,
+      "dewpoint_c": 0.494468,
+      "humidity_pct": 0.837546,
+      "pressure_hpa": -0.372689,
+      "precip_mm": 1.0
+    }
+  },
+  "within_station_spearman": {
+    "WMO_48820": {
+      "n": 3205,
+      "temp_dewpoint": 0.943547,
+      "pressure_precip": -0.471413,
+      "temp_pressure": -0.744405
+    },
+    "WMO_48855": {
+      "n": 3211,
+      "temp_dewpoint": 0.809856,
+      "pressure_precip": -0.312136,
+      "temp_pressure": -0.475491
+    },
+    "WMO_48900": {
+      "n": 3218,
+      "temp_dewpoint": 0.636984,
+      "pressure_precip": -0.331202,
+      "temp_pressure": -0.397439
+    }
+  },
+  "station_season_summary": [
+    {
+      "station_code": "WMO_48820",
+      "station_name": "Hà Nội (Láng)",
+      "season": "Mùa Hạ / Mưa Tây Nam",
+      "n": 1079,
+      "median_temp_c": 30.02,
+      "q1_temp_c": 28.2,
+      "q3_temp_c": 31.77,
+      "bootstrap_low_c": 29.82,
+      "bootstrap_high_c": 30.23,
+      "mean_precip_mm": 9.81
+    },
+    {
+      "station_code": "WMO_48820",
+      "station_name": "Hà Nội (Láng)",
+      "season": "Mùa Thu / Mưa bão Trung Bộ",
+      "n": 797,
+      "median_temp_c": 23.59,
+      "q1_temp_c": 21.05,
+      "q3_temp_c": 26.29,
+      "bootstrap_low_c": 23.26,
+      "bootstrap_high_c": 23.92,
+      "mean_precip_mm": 1.82
+    },
+    {
+      "station_code": "WMO_48820",
+      "station_name": "Hà Nội (Láng)",
+      "season": "Chuyển mùa Xuân–Hè",
+      "n": 537,
+      "median_temp_c": 22.7,
+      "q1_temp_c": 20.32,
+      "q3_temp_c": 24.74,
+      "bootstrap_low_c": 22.37,
+      "bootstrap_high_c": 22.94,
+      "mean_precip_mm": 1.25
+    },
+    {
+      "station_code": "WMO_48820",
+      "station_name": "Hà Nội (Láng)",
+      "season": "Mùa Đông / Gió mùa Đông Bắc",
+      "n": 792,
+      "median_temp_c": 17.77,
+      "q1_temp_c": 16.48,
+      "q3_temp_c": 19.11,
+      "bootstrap_low_c": 17.57,
+      "bootstrap_high_c": 17.91,
+      "mean_precip_mm": 1.27
+    },
+    {
+      "station_code": "WMO_48855",
+      "station_name": "Đà Nẵng",
+      "season": "Mùa Hạ / Mưa Tây Nam",
+      "n": 1085,
+      "median_temp_c": 29.51,
+      "q1_temp_c": 28.0,
+      "q3_temp_c": 30.98,
+      "bootstrap_low_c": 29.35,
+      "bootstrap_high_c": 29.69,
+      "mean_precip_mm": 1.76
+    },
+    {
+      "station_code": "WMO_48855",
+      "station_name": "Đà Nẵng",
+      "season": "Mùa Thu / Mưa bão Trung Bộ",
+      "n": 800,
+      "median_temp_c": 26.43,
+      "q1_temp_c": 24.5,
+      "q3_temp_c": 28.24,
+      "bootstrap_low_c": 26.23,
+      "bootstrap_high_c": 26.69,
+      "mean_precip_mm": 16.37
+    },
+    {
+      "station_code": "WMO_48855",
+      "station_name": "Đà Nẵng",
+      "season": "Chuyển mùa Xuân–Hè",
+      "n": 535,
+      "median_temp_c": 25.64,
+      "q1_temp_c": 24.16,
+      "q3_temp_c": 27.02,
+      "bootstrap_low_c": 25.43,
+      "bootstrap_high_c": 25.8,
+      "mean_precip_mm": 1.42
+    },
+    {
+      "station_code": "WMO_48855",
+      "station_name": "Đà Nẵng",
+      "season": "Mùa Đông / Gió mùa Đông Bắc",
+      "n": 791,
+      "median_temp_c": 22.45,
+      "q1_temp_c": 21.05,
+      "q3_temp_c": 23.95,
+      "bootstrap_low_c": 22.29,
+      "bootstrap_high_c": 22.69,
+      "mean_precip_mm": 2.85
+    },
+    {
+      "station_code": "WMO_48900",
+      "station_name": "TP. Hồ Chí Minh (Tân Sơn Nhất)",
+      "season": "Chuyển mùa Xuân–Hè",
+      "n": 546,
+      "median_temp_c": 29.73,
+      "q1_temp_c": 28.38,
+      "q3_temp_c": 31.04,
+      "bootstrap_low_c": 29.52,
+      "bootstrap_high_c": 29.91,
+      "mean_precip_mm": 0.72
+    },
+    {
+      "station_code": "WMO_48900",
+      "station_name": "TP. Hồ Chí Minh (Tân Sơn Nhất)",
+      "season": "Mùa Hạ / Mưa Tây Nam",
+      "n": 1079,
+      "median_temp_c": 28.48,
+      "q1_temp_c": 26.81,
+      "q3_temp_c": 30.02,
+      "bootstrap_low_c": 28.33,
+      "bootstrap_high_c": 28.65,
+      "mean_precip_mm": 11.65
+    },
+    {
+      "station_code": "WMO_48900",
+      "station_name": "TP. Hồ Chí Minh (Tân Sơn Nhất)",
+      "season": "Mùa Đông / Gió mùa Đông Bắc",
+      "n": 792,
+      "median_temp_c": 27.89,
+      "q1_temp_c": 26.64,
+      "q3_temp_c": 29.25,
+      "bootstrap_low_c": 27.72,
+      "bootstrap_high_c": 28.05,
+      "mean_precip_mm": 0.63
+    },
+    {
+      "station_code": "WMO_48900",
+      "station_name": "TP. Hồ Chí Minh (Tân Sơn Nhất)",
+      "season": "Mùa Thu / Mưa bão Trung Bộ",
+      "n": 801,
+      "median_temp_c": 26.67,
+      "q1_temp_c": 25.26,
+      "q3_temp_c": 28.04,
+      "bootstrap_low_c": 26.49,
+      "bootstrap_high_c": 26.82,
+      "mean_precip_mm": 5.6
+    }
+  ],
+  "regime_summary": [
+    {
+      "weather_regime": "mild_cloudy",
+      "regime_label": "Mát / Nhiều mây ổn định",
+      "n": 4158,
+      "median_temp_c": 24.63,
+      "median_humidity_pct": 69.7,
+      "mean_precip_mm": 0.14
+    },
+    {
+      "weather_regime": "rainy_convective",
+      "regime_label": "Mưa rào / Đối lưu ẩm",
+      "n": 2938,
+      "median_temp_c": 27.21,
+      "median_humidity_pct": 84.4,
+      "mean_precip_mm": 8.81
+    },
+    {
+      "weather_regime": "hot_dry",
+      "regime_label": "Nắng nóng / Khô quang",
+      "n": 2038,
+      "median_temp_c": 29.89,
+      "median_humidity_pct": 67.2,
+      "mean_precip_mm": 0.0
+    },
+    {
+      "weather_regime": "extreme_storm",
+      "regime_label": "Mưa lớn / Nhiễu động mạnh",
+      "n": 500,
+      "median_temp_c": 27.52,
+      "median_humidity_pct": 91.3,
+      "mean_precip_mm": 46.44
+    }
+  ],
+  "sensitivity": [
+    {
+      "scenario": "Toàn bộ bản ghi giữ (Mặc định)",
+      "n": 9634,
+      "median_temp_c": 26.91,
+      "mean_precip_mm": 5.156,
+      "precip_change_pct": 0.0
+    },
+    {
+      "scenario": "Bỏ ngoại lệ IQR toàn cục",
+      "n": 8227,
+      "median_temp_c": 26.78,
+      "mean_precip_mm": 1.3384,
+      "precip_change_pct": -74.04
+    },
+    {
+      "scenario": "Bỏ ngoại lệ IQR theo nhóm Trạm × Mùa",
+      "n": 9160,
+      "median_temp_c": 26.9,
+      "mean_precip_mm": 3.5668,
+      "precip_change_pct": -30.82
+    },
+    {
+      "scenario": "Bỏ các dòng khôi phục từ ERA5",
+      "n": 9305,
+      "median_temp_c": 26.91,
+      "mean_precip_mm": 5.1855,
+      "precip_change_pct": 0.57
+    },
+    {
+      "scenario": "Chỉ giữ ngày không có mưa cực đoan (< 50 mm)",
+      "n": 9455,
+      "median_temp_c": 26.9,
+      "mean_precip_mm": 3.9329,
+      "precip_change_pct": -23.72
+    }
+  ],
+  "clustering": {
+    "fit_count": 9160,
+    "seed_ari_7_vs_42": 1.0,
+    "trials": [
+      {
+        "k": 2,
+        "silhouette_sample": 0.6385,
+        "inertia": 5265.6725,
+        "min_cluster_size": 3370
+      },
+      {
+        "k": 3,
+        "silhouette_sample": 0.5377,
+        "inertia": 3345.4397,
+        "min_cluster_size": 2060
+      },
+      {
+        "k": 4,
+        "silhouette_sample": 0.4889,
+        "inertia": 2193.6001,
+        "min_cluster_size": 1469
+      },
+      {
+        "k": 5,
+        "silhouette_sample": 0.4605,
+        "inertia": 1706.4259,
+        "min_cluster_size": 828
+      }
+    ],
+    "summary": [
+      {
+        "cluster": 1,
+        "n": 3370,
+        "median_temp_c": 27.25,
+        "median_humidity_pct": 84.2,
+        "mean_precip_mm": 9.64,
+        "median_pressure_hpa": 1009.2
+      },
+      {
+        "cluster": 2,
+        "n": 5790,
+        "median_temp_c": 26.66,
+        "median_humidity_pct": 68.3,
+        "mean_precip_mm": 0.03,
+        "median_pressure_hpa": 1011.3
+      }
+    ],
+    "feature_sensitivity": [
+      {
+        "config": "Mốc chuẩn: Độ ẩm + ln(Mưa + 1), Z-score, bỏ IQR nhóm",
+        "common_n": 9160,
+        "ari": 1.0
+      },
+      {
+        "config": "Giữ toàn bộ ngoại lệ IQR nhóm khi fit",
+        "common_n": 9160,
+        "ari": 0.9691
+      },
+      {
+        "config": "Log + chuẩn hóa Trung vị / IQR",
+        "common_n": 9160,
+        "ari": 0.9284
+      },
+      {
+        "config": "Thang đo gốc (chưa lấy ln và chưa Z-score)",
+        "common_n": 9160,
+        "ari": 0.8448
+      },
+      {
+        "config": "Đổi sang cặp biến Nhiệt độ + Áp suất (Z-score)",
+        "common_n": 9160,
+        "ari": 0.0038
+      }
+    ]
+  },
+  "forecasting": {
+    "synthetic_paired_bootstrap": [
+      {
+        "comparison": "pred_c4 - pred_c3",
+        "diff_rmse_c": -0.00131,
+        "ci_low_c": -0.00366,
+        "ci_high_c": 0.00105
+      },
+      {
+        "comparison": "pred_c4 - pred_clim",
+        "diff_rmse_c": -0.05083,
+        "ci_low_c": -0.07539,
+        "ci_high_c": -0.02854
+      }
+    ],
+    "split_counts": {
+      "train_2017_2023": 7140,
+      "val_2024": 1023,
+      "test_2025": 1018,
+      "cross_boundary_dropped": 6,
+      "total_valid_windows": 9181,
+      "total_complete_windows": 9187
+    },
+    "persistence_baseline": {
+      "val_mae_c": 1.1731,
+      "val_rmse_c": 1.4525,
+      "test_mae_c": 1.2112,
+      "test_rmse_c": 1.5185,
+      "test_r2": 0.8761
+    },
+    "climatology_anomaly_baseline": {
+      "val_mae_c": 1.122,
+      "val_rmse_c": 1.4012,
+      "test_mae_c": 1.1815,
+      "test_rmse_c": 1.4587,
+      "test_r2": 0.8857
+    },
+    "preprocessing_step_ablation": [
+      {
+        "step_name": "Bước C0a (Dữ liệu thô hoàn toàn): Giữ bản ghi trùng, gió chưa đổi đơn vị, chưa lọc QC, điền thiếu bằng TB Train",
+        "n_train": 7808,
+        "val_mae_c": 1.1986,
+        "val_rmse_c": 1.5333,
+        "test_mae_c": 1.2387,
+        "test_rmse_c": 1.5823,
+        "test_r2": 0.8655
+      },
+      {
+        "step_name": "Bước C0b (+ Khử trùng lặp): Đã loại 412 dòng trùng khóa băm, chưa đổi đơn vị gió, chưa lọc QC, điền TB Train",
+        "n_train": 7487,
+        "val_mae_c": 1.1987,
+        "val_rmse_c": 1.5334,
+        "test_mae_c": 1.2387,
+        "test_rmse_c": 1.5823,
+        "test_r2": 0.8655
+      },
+      {
+        "step_name": "Bước C0c (+ Quy đổi đơn vị gió): Đã khử trùng & đổi 242 dòng gió km/h → m/s, chưa lọc QC, điền TB Train",
+        "n_train": 7487,
+        "val_mae_c": 1.1988,
+        "val_rmse_c": 1.5331,
+        "test_mae_c": 1.2384,
+        "test_rmse_c": 1.5819,
+        "test_r2": 0.8656
+      },
+      {
+        "step_name": "Bước C0d (+ Lọc cách ly QC vật lý WMO-No. 8): Đã loại 227 dòng lỗi vật lý, nhưng điền khuyết bằng TB Train",
+        "n_train": 7140,
+        "val_mae_c": 1.1985,
+        "val_rmse_c": 1.5328,
+        "test_mae_c": 1.2378,
+        "test_rmse_c": 1.5812,
+        "test_r2": 0.8657
+      },
+      {
+        "step_name": "Bước C1 (Hoàn tất tiền xử lý chuẩn): + Điền khuyết có điều kiện kẹp trong [Tmin, Tmax] & ≥ Td",
+        "n_train": 7140,
+        "val_mae_c": 1.1554,
+        "val_rmse_c": 1.4304,
+        "test_mae_c": 1.1955,
+        "test_rmse_c": 1.4884,
+        "test_r2": 0.881
+      }
+    ],
+    "ablation_trials": [
+      {
+        "config_name": "Cấu hình 0 (Trước toàn bộ tiền xử lý): Dữ liệu thô chưa lọc QC, chưa đổi đơn vị & điền TB Train",
+        "n_features": 4,
+        "val_mae_c": 1.1986,
+        "val_rmse_c": 1.5333,
+        "test_mae_c": 1.2387,
+        "test_rmse_c": 1.5823,
+        "test_rmse_ci_low_c": 1.4932,
+        "test_rmse_ci_high_c": 1.6795,
+        "test_r2": 0.8655
+      },
+      {
+        "config_name": "Cấu hình 1 (Sau toàn bộ tiền xử lý): Khử trùng, đổi đơn vị, lọc QC & điền khuyết có điều kiện (4 biến tại ngày t)",
+        "n_features": 4,
+        "val_mae_c": 1.1554,
+        "val_rmse_c": 1.4304,
+        "test_mae_c": 1.1955,
+        "test_rmse_c": 1.4884,
+        "test_rmse_ci_low_c": 1.4292,
+        "test_rmse_ci_high_c": 1.5562,
+        "test_r2": 0.881
+      },
+      {
+        "config_name": "Cấu hình 2: Thêm đặc trưng nhiệt động Điểm sương & Bức xạ mặt trời tại ngày t",
+        "n_features": 6,
+        "val_mae_c": 1.1514,
+        "val_rmse_c": 1.4279,
+        "test_mae_c": 1.1938,
+        "test_rmse_c": 1.4842,
+        "test_rmse_ci_low_c": 1.4251,
+        "test_rmse_ci_high_c": 1.5514,
+        "test_r2": 0.8817
+      },
+      {
+        "config_name": "Cấu hình 3: Thêm Chu kỳ mùa theo trạm (sin/cos) & Tách vector gió (u, v)",
+        "n_features": 16,
+        "val_mae_c": 1.0856,
+        "val_rmse_c": 1.3501,
+        "test_mae_c": 1.1384,
+        "test_rmse_c": 1.4091,
+        "test_rmse_ci_low_c": 1.3477,
+        "test_rmse_ci_high_c": 1.4741,
+        "test_r2": 0.8933
+      },
+      {
+        "config_name": "Cấu hình 4 (Đầy đủ đặc trưng): Thêm Biến trễ theo ngày lịch (Lag 1d, 3d) & Độ biến thiên khí áp (ΔP)",
+        "n_features": 20,
+        "val_mae_c": 1.0843,
+        "val_rmse_c": 1.3483,
+        "test_mae_c": 1.1374,
+        "test_rmse_c": 1.4078,
+        "test_rmse_ci_low_c": 1.3471,
+        "test_rmse_ci_high_c": 1.4727,
+        "test_r2": 0.8935
+      }
+    ],
+    "station_forecast_metrics": [
+      {
+        "station_code": "WMO_48820",
+        "station_name": "Hà Nội (Láng)",
+        "n_test": 343,
+        "pers_rmse_c": 1.5332,
+        "clim_rmse_c": 1.4501,
+        "c1_rmse_c": 1.5136,
+        "c3_rmse_c": 1.4079,
+        "c4_rmse_c": 1.4081,
+        "c4_mae_c": 1.1351,
+        "c4_r2": 0.9313,
+        "rain_c4_acc_pct": 68.8,
+        "rain_c4_f1_pct": 64.45,
+        "rain_c4_roc_auc": 0.7357
+      },
+      {
+        "station_code": "WMO_48855",
+        "station_name": "Đà Nẵng",
+        "n_test": 329,
+        "pers_rmse_c": 1.5389,
+        "clim_rmse_c": 1.4751,
+        "c1_rmse_c": 1.4995,
+        "c3_rmse_c": 1.4284,
+        "c4_rmse_c": 1.4282,
+        "c4_mae_c": 1.1426,
+        "c4_r2": 0.8277,
+        "rain_c4_acc_pct": 60.49,
+        "rain_c4_f1_pct": 54.23,
+        "rain_c4_roc_auc": 0.656
+      },
+      {
+        "station_code": "WMO_48900",
+        "station_name": "TP. Hồ Chí Minh (Tân Sơn Nhất)",
+        "n_test": 346,
+        "pers_rmse_c": 1.4841,
+        "clim_rmse_c": 1.4514,
+        "c1_rmse_c": 1.452,
+        "c3_rmse_c": 1.3918,
+        "c4_rmse_c": 1.3879,
+        "c4_mae_c": 1.1348,
+        "c4_r2": 0.7278,
+        "rain_c4_acc_pct": 73.7,
+        "rain_c4_f1_pct": 68.94,
+        "rain_c4_roc_auc": 0.7883
+      }
+    ]
+  },
+  "rain_classification": [
+    {
+      "test_accuracy_pct": 62.67,
+      "test_precision_pct": 0.0,
+      "test_recall_pct": 0.0,
+      "test_f1_pct": 0.0,
+      "test_roc_auc": 0.5,
+      "test_pr_auc": 0.3733,
+      "test_brier": 0.234,
+      "predicted_rain_rate_pct": 0.0,
+      "threshold": 1.01,
+      "tp": 0,
+      "fp": 0,
+      "fn": 380,
+      "tn": 638,
+      "config_name": "Baseline 0a: Dự báo tĩnh 'Luôn không mưa' (Đa số)",
+      "n_features": 0,
+      "val_f1_pct": 0.0
+    },
+    {
+      "test_accuracy_pct": 37.33,
+      "test_precision_pct": 37.33,
+      "test_recall_pct": 100.0,
+      "test_f1_pct": 54.36,
+      "test_roc_auc": 0.5,
+      "test_pr_auc": 0.3733,
+      "test_brier": 0.234,
+      "predicted_rain_rate_pct": 100.0,
+      "threshold": 0.0,
+      "tp": 380,
+      "fp": 638,
+      "fn": 0,
+      "tn": 0,
+      "config_name": "Baseline 0b: Dự báo tĩnh 'Ngày nào cũng mưa' (Tỷ lệ cơ sở)",
+      "n_features": 0,
+      "val_f1_pct": 55.3
+    },
+    {
+      "test_accuracy_pct": 62.28,
+      "test_precision_pct": 49.48,
+      "test_recall_pct": 49.74,
+      "test_f1_pct": 49.61,
+      "test_roc_auc": 0.5974,
+      "test_pr_auc": 0.4642,
+      "test_brier": 0.2251,
+      "predicted_rain_rate_pct": 37.52,
+      "threshold": 0.5,
+      "tp": 189,
+      "fp": 193,
+      "fn": 191,
+      "tn": 445,
+      "config_name": "Cấu hình C1: Dự báo quán tính trạng thái mưa (Mưa ngày t+1 = Mưa ngày t)",
+      "n_features": 1,
+      "val_f1_pct": 48.92
+    },
+    {
+      "test_accuracy_pct": 41.94,
+      "test_precision_pct": 38.79,
+      "test_recall_pct": 96.05,
+      "test_f1_pct": 55.26,
+      "test_roc_auc": 0.6279,
+      "test_pr_auc": 0.5216,
+      "test_brier": 0.221,
+      "predicted_rain_rate_pct": 92.44,
+      "threshold": 0.24,
+      "tp": 365,
+      "fp": 576,
+      "fn": 15,
+      "tn": 62,
+      "config_name": "Cấu hình C2: Chỉ 4 biến trạng thái cơ bản tại ngày t (Đã qua tiền xử lý)",
+      "n_features": 4,
+      "val_f1_pct": 55.96
+    },
+    {
+      "test_accuracy_pct": 59.63,
+      "test_precision_pct": 47.5,
+      "test_recall_pct": 77.63,
+      "test_f1_pct": 58.94,
+      "test_roc_auc": 0.6917,
+      "test_pr_auc": 0.5603,
+      "test_brier": 0.2092,
+      "predicted_rain_rate_pct": 61.0,
+      "threshold": 0.31,
+      "tp": 295,
+      "fp": 326,
+      "fn": 85,
+      "tn": 312,
+      "config_name": "Cấu hình C3: Thêm Điểm sương, Mưa ngày t, Vector gió (u, v) & Chu kỳ (sin/cos)",
+      "n_features": 9,
+      "val_f1_pct": 58.53
+    },
+    {
+      "test_accuracy_pct": 67.78,
+      "test_precision_pct": 55.22,
+      "test_recall_pct": 72.37,
+      "test_f1_pct": 62.64,
+      "test_roc_auc": 0.734,
+      "test_pr_auc": 0.5935,
+      "test_brier": 0.1976,
+      "predicted_rain_rate_pct": 48.92,
+      "threshold": 0.35,
+      "tp": 275,
+      "fp": 223,
+      "fn": 105,
+      "tn": 415,
+      "config_name": "Cấu hình C4 (Đầy đủ đặc trưng): Thêm Chu kỳ theo trạm, Biến trễ ngày lịch & ΔP 24h",
+      "n_features": 20,
+      "val_f1_pct": 63.89
+    }
+  ],
+  "dp_rain_bins": [
+    {
+      "dp_bin": "< -3,0",
+      "n": 955,
+      "rain_next_pct": 45.2,
+      "rain_curr_pct": 63.1
+    },
+    {
+      "dp_bin": "-3,0..-1,5",
+      "n": 1537,
+      "rain_next_pct": 39.2,
+      "rain_curr_pct": 44.4
+    },
+    {
+      "dp_bin": "-1,5..0,0",
+      "n": 2152,
+      "rain_next_pct": 36.6,
+      "rain_curr_pct": 37.6
+    },
+    {
+      "dp_bin": "0,0..+1,5",
+      "n": 2228,
+      "rain_next_pct": 36.3,
+      "rain_curr_pct": 33.2
+    },
+    {
+      "dp_bin": "+1,5..+3,0",
+      "n": 1400,
+      "rain_next_pct": 34.9,
+      "rain_curr_pct": 28.3
+    },
+    {
+      "dp_bin": "> +3,0",
+      "n": 909,
+      "rain_next_pct": 41.8,
+      "rain_curr_pct": 30.1
+    }
+  ],
+  "cluster_subsample_stability": [
+    {
+      "subsample_id": 1,
+      "n_subsample": 7328,
+      "ari_vs_full_fit": 1.0
+    },
+    {
+      "subsample_id": 2,
+      "n_subsample": 7328,
+      "ari_vs_full_fit": 1.0
+    },
+    {
+      "subsample_id": 3,
+      "n_subsample": 7328,
+      "ari_vs_full_fit": 0.9995
+    },
+    {
+      "subsample_id": 4,
+      "n_subsample": 7328,
+      "ari_vs_full_fit": 1.0
+    },
+    {
+      "subsample_id": 5,
+      "n_subsample": 7328,
+      "ari_vs_full_fit": 1.0
+    }
+  ],
+  "independent_medians": [
+    {
+      "variable": "temp_mean_c",
+      "label": "Nhiệt độ trung bình ngày",
+      "unit": "°C",
+      "pandas_median": 26.91,
+      "python_statistics_median": 26.91,
+      "sqlite_order_by_median": 26.91,
+      "max_abs_diff": 0.0
+    },
+    {
+      "variable": "humidity_pct",
+      "label": "Độ ẩm tương đối",
+      "unit": "%",
+      "pandas_median": 74.0,
+      "python_statistics_median": 74.0,
+      "sqlite_order_by_median": 74.0,
+      "max_abs_diff": 0.0
+    },
+    {
+      "variable": "pressure_hpa",
+      "label": "Áp suất khí quyển",
+      "unit": "hPa",
+      "pandas_median": 1010.5,
+      "python_statistics_median": 1010.5,
+      "sqlite_order_by_median": 1010.5,
+      "max_abs_diff": 0.0
+    }
+  ],
+  "evaluation_metrics": [
+    {
+      "field": "Khử bản ghi trùng truyền tin SYNOP (SYNOP_RETRANSMIT_DUP)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "412/412",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi Điểm sương Td > T & Magnus (SENSOR_FAULT_DEWPOINT)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "65/65",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi đảo ngược cực trị Tmax < Tmin (SENSOR_FAULT_TMAX_TMIN)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "55/55",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi Độ ẩm ngoài miền 0–100% (SENSOR_FAULT_HUMIDITY)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "55/55",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Cách ly lỗi Lượng mưa âm / Chuỗi hỏng (SENSOR_FAULT_PRECIP)",
+      "check_type": "Đối chiếu nhãn lỗi mô phỏng",
+      "matched": "52/52",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Giữ bản ghi hợp lệ (ISD_SYNOP_ERA5_MERGED_V1)",
+      "check_type": "Đối chiếu nhãn chuẩn mô phỏng",
+      "matched": "9.634/9.634",
+      "false_alarms": "0",
+      "result_note": "100,00% (trên bộ lỗi mô phỏng)"
+    },
+    {
+      "field": "Quy đổi đơn vị tốc độ gió",
+      "check_type": "Thống kê vận hành (đếm dòng)",
+      "matched": "255 dòng thô; 242 không trùng; 234 sạch",
+      "false_alarms": "—",
+      "result_note": "242 dòng trước QC, trong đó 234 được giữ và 8 bị cách ly"
+    },
+    {
+      "field": "Điền khuyết có điều kiện kẹp ngưỡng [Tmin, Tmax] trên dòng giữ",
+      "check_type": "Thống kê vận hành (đếm ô thiếu)",
+      "matched": "Đã xử lý 329 ô (183 nhiệt độ + 146 áp suất)",
+      "false_alarms": "—",
+      "result_note": "Đã xử lý 329 ô thiếu (không tính % độ chính xác)"
+    }
+  ],
+  "real_era5_study": {
+    "summary": {
+      "source": "Open-Meteo ERA5 reanalysis; not station observations or operational forecasts",
+      "quality": {
+        "raw_rows": 9861,
+        "duplicates": 0,
+        "rejected": 0,
+        "clean_rows": 9861,
+        "missing": {
+          "date": 0,
+          "temp": 0,
+          "tmax": 0,
+          "tmin": 0,
+          "humidity": 0,
+          "pressure": 0,
+          "rain": 0,
+          "wind": 0,
+          "solar": 0,
+          "location": 0
+        }
+      },
+      "split_counts": {
+        "train": 7662,
+        "validation": 1098,
+        "test": 1095
+      },
+      "split_policy": "target_date determines split; earlier observed history may cross the year boundary",
+      "chosen_by_validation": "R3",
+      "temperature": [
+        {
+          "model": "R1",
+          "alpha": 0.1,
+          "validation_RMSE": 1.009720491126408,
+          "MAE": 0.7033007373461604,
+          "RMSE": 1.0465142030190133,
+          "R2": 0.9237722422292292
+        },
+        {
+          "model": "R2",
+          "alpha": 0.1,
+          "validation_RMSE": 0.9659384008679635,
+          "MAE": 0.6747408356433712,
+          "RMSE": 0.993458386276786,
+          "R2": 0.9313054548954337
+        },
+        {
+          "model": "R3",
+          "alpha": 0.1,
+          "validation_RMSE": 0.925764505759406,
+          "MAE": 0.6522482246676791,
+          "RMSE": 0.9301896534256218,
+          "R2": 0.9397765126419506
+        },
+        {
+          "model": "Persistence",
+          "MAE": 0.7221004566210046,
+          "RMSE": 1.0740823841943083,
+          "R2": 0.9197032293550649
+        },
+        {
+          "model": "Monthly_climatology",
+          "MAE": 1.2982084553393207,
+          "RMSE": 1.7797254326995138,
+          "R2": 0.7795404559577949
+        },
+        {
+          "model": "Climatology_anomaly",
+          "MAE": 0.6964845203635787,
+          "RMSE": 1.0209455680750157,
+          "R2": 0.927451561726652,
+          "anomaly_weight": 0.85
+        }
+      ],
+      "rain": {
+        "C": 0.1,
+        "threshold_validation": 0.44999999999999996,
+        "Accuracy": 0.7872146118721461,
+        "F1": 0.8166797797010228,
+        "ROC_AUC": 0.859322278993541,
+        "Average_precision": 0.8838721773726952,
+        "Brier": 0.15131610601745055,
+        "always_dry_accuracy": 0.41187214611872147,
+        "always_wet_F1": 0.7406555491661875,
+        "persistence_F1": 0.8052754072924748,
+        "train_prevalence": 0.5408509527538502,
+        "test_prevalence": 0.5881278538812785,
+        "Brier_climatology_train": 0.24446858675049263,
+        "Brier_climatology_test_hindsight": 0.24223348137028003,
+        "BSS_train_climatology": 0.38104069717601197,
+        "BSS_test_climatology_hindsight": 0.3753295161285011
+      },
+      "paired_bootstrap": [
+        {
+          "scope": "ALL",
+          "comparison": "R3 - Persistence",
+          "metric": "RMSE_C",
+          "diff": -0.1439,
+          "ci_low": -0.1938,
+          "ci_high": -0.0951
+        },
+        {
+          "scope": "ALL",
+          "comparison": "R3 - Climatology_anomaly",
+          "metric": "RMSE_C",
+          "diff": -0.0908,
+          "ci_low": -0.1403,
+          "ci_high": -0.0419
+        },
+        {
+          "scope": "ALL",
+          "comparison": "Logistic - rain persistence",
+          "metric": "F1_pp",
+          "diff": 1.1404,
+          "ci_low": -1.1596,
+          "ci_high": 3.1507
+        },
+        {
+          "scope": "Da_Nang",
+          "comparison": "R3 - Persistence",
+          "metric": "RMSE_C",
+          "diff": -0.1035,
+          "ci_low": -0.1471,
+          "ci_high": -0.0518
+        },
+        {
+          "scope": "Ha_Noi",
+          "comparison": "R3 - Persistence",
+          "metric": "RMSE_C",
+          "diff": -0.2401,
+          "ci_low": -0.3168,
+          "ci_high": -0.1632
+        },
+        {
+          "scope": "TP_HCM",
+          "comparison": "R3 - Persistence",
+          "metric": "RMSE_C",
+          "diff": -0.0164,
+          "ci_low": -0.0353,
+          "ci_high": 0.0046
+        }
+      ],
+      "run_utc": "2026-11-10T07:41:19.643471+00:00"
+    },
+    "regional_metrics": [
+      {
+        "location": "Da_Nang",
+        "model": "R1",
+        "MAE": "0.5275166284717835",
+        "RMSE": "0.752076807123806",
+        "R2": "0.9474982611677121"
+      },
+      {
+        "location": "Da_Nang",
+        "model": "R2",
+        "MAE": "0.501547594457636",
+        "RMSE": "0.6933719741729918",
+        "R2": "0.9553746266326837"
+      },
+      {
+        "location": "Da_Nang",
+        "model": "R3",
+        "MAE": "0.48581400541221975",
+        "RMSE": "0.6670853412564929",
+        "R2": "0.9586940999047038"
+      },
+      {
+        "location": "Da_Nang",
+        "model": "Persistence",
+        "MAE": "0.5438356164383562",
+        "RMSE": "0.7706073036497618",
+        "R2": "0.9448791968258945"
+      },
+      {
+        "location": "Da_Nang",
+        "model": "Monthly_climatology",
+        "MAE": "1.1809553002751962",
+        "RMSE": "1.5337701043499306",
+        "R2": "0.781641635764363"
+      },
+      {
+        "location": "Da_Nang",
+        "model": "Climatology_anomaly",
+        "MAE": "0.5133155843738536",
+        "RMSE": "0.739542139929311",
+        "R2": "0.949233742690801"
+      },
+      {
+        "location": "Ha_Noi",
+        "model": "R1",
+        "MAE": "1.0964016922557622",
+        "RMSE": "1.5247320034650775",
+        "R2": "0.9087840176475961"
+      },
+      {
+        "location": "Ha_Noi",
+        "model": "R2",
+        "MAE": "1.0216107960953311",
+        "RMSE": "1.4330836908938902",
+        "R2": "0.9194200460816184"
+      },
+      {
+        "location": "Ha_Noi",
+        "model": "R3",
+        "MAE": "0.9988221454136125",
+        "RMSE": "1.3289650043160546",
+        "R2": "0.9307035483228702"
+      },
+      {
+        "location": "Ha_Noi",
+        "model": "Persistence",
+        "MAE": "1.1452054794520548",
+        "RMSE": "1.569032508808734",
+        "R2": "0.9034065248009456"
+      },
+      {
+        "location": "Ha_Noi",
+        "model": "Monthly_climatology",
+        "MAE": "2.0463617124243907",
+        "RMSE": "2.538457146236066",
+        "R2": "0.7471729252768047"
+      },
+      {
+        "location": "Ha_Noi",
+        "model": "Climatology_anomaly",
+        "MAE": "1.1193061868133531",
+        "RMSE": "1.4881611712533385",
+        "R2": "0.9131071893480089"
+      },
+      {
+        "location": "TP_HCM",
+        "model": "R1",
+        "MAE": "0.48598389131093533",
+        "RMSE": "0.6286085627458425",
+        "R2": "0.7240048281662812"
+      },
+      {
+        "location": "TP_HCM",
+        "model": "R2",
+        "MAE": "0.5010641163771463",
+        "RMSE": "0.6529817272454258",
+        "R2": "0.7021874767205158"
+      },
+      {
+        "location": "TP_HCM",
+        "model": "R3",
+        "MAE": "0.47210852317720486",
+        "RMSE": "0.6201673474185602",
+        "R2": "0.7313674143361584"
+      },
+      {
+        "location": "TP_HCM",
+        "model": "Persistence",
+        "MAE": "0.4772602739726028",
+        "RMSE": "0.6366005607699406",
+        "R2": "0.7169423261889635"
+      },
+      {
+        "location": "TP_HCM",
+        "model": "Monthly_climatology",
+        "MAE": "0.6673083533183756",
+        "RMSE": "0.8402692610811519",
+        "R2": "0.5068513457246471"
+      },
+      {
+        "location": "TP_HCM",
+        "model": "Climatology_anomaly",
+        "MAE": "0.4568317899035289",
+        "RMSE": "0.6045190737757726",
+        "R2": "0.7447528414701019"
+      }
+    ],
+    "provenance": [
+      {
+        "file": "Ha_Noi.json",
+        "sha256": "ca3c7502c95fb83dfab106498c9bb60aa30ffbb16a46993bc91e80c41d0be457",
+        "rows": 3287,
+        "grid_latitude": 21.0,
+        "grid_longitude": 105.75,
+        "units": {
+          "time": "iso8601",
+          "temperature_2m_mean": "°C",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C",
+          "relative_humidity_2m_mean": "%",
+          "pressure_msl_mean": "hPa",
+          "precipitation_sum": "mm",
+          "wind_speed_10m_mean": "m/s",
+          "shortwave_radiation_sum": "MJ/m²"
+        }
+      },
+      {
+        "file": "Da_Nang.json",
+        "sha256": "01fd3224060d437c3d9d0a668217619e778eadd203a3ca1d7594799a49caa700",
+        "rows": 3287,
+        "grid_latitude": 16.0,
+        "grid_longitude": 108.25,
+        "units": {
+          "time": "iso8601",
+          "temperature_2m_mean": "°C",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C",
+          "relative_humidity_2m_mean": "%",
+          "pressure_msl_mean": "hPa",
+          "precipitation_sum": "mm",
+          "wind_speed_10m_mean": "m/s",
+          "shortwave_radiation_sum": "MJ/m²"
+        }
+      },
+      {
+        "file": "TP_HCM.json",
+        "sha256": "15c467120d301ec348535fd79c10226b828164a6b9a2fa86e3837f6186b557fa",
+        "rows": 3287,
+        "grid_latitude": 10.75,
+        "grid_longitude": 106.75,
+        "units": {
+          "time": "iso8601",
+          "temperature_2m_mean": "°C",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C",
+          "relative_humidity_2m_mean": "%",
+          "pressure_msl_mean": "hPa",
+          "precipitation_sum": "mm",
+          "wind_speed_10m_mean": "m/s",
+          "shortwave_radiation_sum": "MJ/m²"
+        }
+      }
+    ]
+  },
+  "sql_benchmark": {
+    "query": "SELECT row_id, obs_date, temp_mean_c, pressure_hpa, precip_mm\nFROM observations\nWHERE station_id = ? AND regime_id = ?\n  AND temp_mean_c BETWEEN ? AND ?\nORDER BY temp_mean_c, row_id LIMIT 100",
+    "parameters": [
+      3,
+      2,
+      27.8,
+      30.2
+    ],
+    "before": {
+      "median_ms": 0.9972,
+      "p10_ms": 0.7214,
+      "p90_ms": 1.6776,
+      "plan": [
+        "(4, 0, 148, 'SCAN observations')",
+        "(30, 0, 0, 'USE TEMP B-TREE FOR ORDER BY')"
+      ],
+      "result_count": 100,
+      "result_sha256": "53e185af6f1484b2fbfa6a14b0ed5617a0f7e9fcaa9afc2dc24a2d3ca685b63c",
+      "sample_rows": [
+        [
+          7322,
+          "2019-01-18",
+          28.0,
+          1009.1,
+          0.0
+        ],
+        [
+          7876,
+          "2020-07-25",
+          28.0,
+          1009.2,
+          0.0
+        ],
+        [
+          9682,
+          "2025-07-05",
+          28.0,
+          1008.5,
+          0.0
+        ],
+        [
+          7660,
+          "2019-12-22",
+          28.01,
+          1009.2,
+          0.0
+        ],
+        [
+          7809,
+          "2020-05-19",
+          28.01,
+          1012.6,
+          0.0
+        ]
+      ]
+    },
+    "after": {
+      "median_ms": 0.1479,
+      "p10_ms": 0.0901,
+      "p90_ms": 0.5318,
+      "plan": [
+        "(5, 0, 62, 'SEARCH observations USING INDEX idx_observations_search (station_id=? AND regime_id=? AND temp_mean_c>? AND temp_mean_c<?)')"
+      ],
+      "result_count": 100,
+      "result_sha256": "53e185af6f1484b2fbfa6a14b0ed5617a0f7e9fcaa9afc2dc24a2d3ca685b63c",
+      "sample_rows": [
+        [
+          7322,
+          "2019-01-18",
+          28.0,
+          1009.1,
+          0.0
+        ],
+        [
+          7876,
+          "2020-07-25",
+          28.0,
+          1009.2,
+          0.0
+        ],
+        [
+          9682,
+          "2025-07-05",
+          28.0,
+          1008.5,
+          0.0
+        ],
+        [
+          7660,
+          "2019-12-22",
+          28.01,
+          1009.2,
+          0.0
+        ],
+        [
+          7809,
+          "2020-05-19",
+          28.01,
+          1012.6,
+          0.0
+        ]
+      ]
+    },
+    "speedup_ratio": 6.74
+  }
+}

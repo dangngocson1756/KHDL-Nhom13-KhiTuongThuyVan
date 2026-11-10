@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://flood-api.open-meteo.com/v1/flood?start_date=2017-01-01&end_date=2021-12-31&daily=river_discharge&models=consolidated_v4&timezone=GMT&cell_selection=nearest&latitude=21.02&longitude=105.8",
+    "params": {
+      "start_date": "2017-01-01",
+      "end_date": "2021-12-31",
+      "daily": "river_discharge",
+      "models": "consolidated_v4",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "latitude": 21.02,
+      "longitude": 105.8
+    },
+    "fetched_at_utc": "2026-11-10T07:24:45.853949+00:00",
+    "sha256": "b16980be4821438a4c87ff7858625577fde37f3cab223995df5c54cda0994710",
+    "source": "Open-Meteo Flood API / GloFAS v4 consolidated model; not gauge observations",
+    "file": "data/hydrology/Ha_Noi.json",
+    "grid_latitude": 21.025002,
+    "grid_longitude": 105.82501,
+    "rows": 1826
+  },
+  {
+    "url": "https://flood-api.open-meteo.com/v1/flood?start_date=2017-01-01&end_date=2021-12-31&daily=river_discharge&models=consolidated_v4&timezone=GMT&cell_selection=nearest&latitude=16.04&longitude=108.2",
+    "params": {
+      "start_date": "2017-01-01",
+      "end_date": "2021-12-31",
+      "daily": "river_discharge",
+      "models": "consolidated_v4",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "latitude": 16.04,
+      "longitude": 108.2
+    },
+    "fetched_at_utc": "2026-11-10T07:24:52.637973+00:00",
+    "sha256": "4e17ad5d20fedbdc2ee4e868b697f0c1313937f75c9f7826e7456952b2ba7217",
+    "source": "Open-Meteo Flood API / GloFAS v4 consolidated model; not gauge observations",
+    "file": "data/hydrology/Da_Nang.json",
+    "grid_latitude": 16.025002,
+    "grid_longitude": 108.17502,
+    "rows": 1826
+  },
+  {
+    "url": "https://flood-api.open-meteo.com/v1/flood?start_date=2017-01-01&end_date=2021-12-31&daily=river_discharge&models=consolidated_v4&timezone=GMT&cell_selection=nearest&latitude=10.82&longitude=106.67",
+    "params": {
+      "start_date": "2017-01-01",
+      "end_date": "2021-12-31",
+      "daily": "river_discharge",
+      "models": "consolidated_v4",
+      "timezone": "GMT",
+      "cell_selection": "nearest",
+      "latitude": 10.82,
+      "longitude": 106.67
+    },
+    "fetched_at_utc": "2026-11-10T07:25:00.570994+00:00",
+    "sha256": "d6ad251dc8168a7bb166eb9644763cfb19b5c9c641e5555f0f5beef69b55620c",
+    "source": "Open-Meteo Flood API / GloFAS v4 consolidated model; not gauge observations",
+    "file": "data/hydrology/TP_HCM.json",
+    "grid_latitude": 10.825005,
+    "grid_longitude": 106.67502,
+    "rows": 1826
+  }
+]
